@@ -12,25 +12,49 @@ body{
 .container{
     .row{
         .col-md-3{
-            background-color: #fff;
-            border-radius: 10px;
-            text-align: center;
-            padding: 20px 0px;
-            h2{
-                color: #111;
-            }
-            p{
-                color: #999;
-                font-family: 'Poppins',sans-serif !important;
-                font-weight: 400;
-                font-size: 17px;
-                margin-top: 10px;
-            }
-            img{
-                width: 170px;
-                height: 170px;
-                border-radius: 50%;
-                margin-top: 40px;
+            margin: auto;
+            margin-top: 150px;
+            padding: 0px 20px !important;
+            .music-block{
+                background-color: #fff;
+                border-radius: 10px;
+                text-align: center;
+                padding: 30px 0px 40px 0px;
+                box-shadow: #fff 0px 2px 8px 0px;
+                h2{
+                    color: #111;
+                }
+                p{
+                    color: #999;
+                    font-family: 'Poppins',sans-serif !important;
+                    font-weight: 400;
+                    font-size: 17px;
+                    margin-top: 10px;
+                }
+                img{
+                    width: 170px;
+                    height: 170px;
+                    border-radius: 50%;
+                    margin-top: 20px;
+                }
+                .music-icon-box{
+                    width: 65%;
+                    margin-top: 30px;
+                    svg{
+                        &:first-child{
+                            font-size: 18px;
+                            margin-top: 20px;
+                        }
+                        &:last-child{
+                            font-size: 18px;
+                            margin-top: 20px;
+                        }
+                    }
+                    .fa-play-circle{
+                        font-size: 60px;
+                        color: #111;
+                    }
+                }
             }
         }
     }
