@@ -1,7 +1,31 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Slab', serif !important;
     box-sizing: border-box;
+}
+
+body{
+    background-color: #111 !important;
+}
+
+.container{
+    .row{
+        .col-md-3{
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px 0px;
+            h2{
+                color: #111;
+            }
+            p{
+                color: #999;
+                font-family: 'Nunito',sans-serif !important;
+                font-weight: 600;
+                font-size: 17px;
+            }
+        }
+    }
 }
 
