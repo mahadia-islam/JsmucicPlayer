@@ -1,1 +1,1 @@
-# JsmucicPlayer
+A javascript based music Player 🎧🎻🧡
