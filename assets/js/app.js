@@ -43,6 +43,8 @@ playButton.addEventListener('click',() => {
     stopButton.classList.remove('hide');
     playButton.classList.add('hide');
     playButton.classList.remove('show');
+    musicImg.classList.add('anime');
+
 });
 
 stopButton.addEventListener('click',() => {
@@ -51,6 +53,7 @@ stopButton.addEventListener('click',() => {
     stopButton.classList.add('hide');
     playButton.classList.remove('hide');
     playButton.classList.add('show');
+    musicImg.classList.remove('anime');
 });
 
 

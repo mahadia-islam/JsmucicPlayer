@@ -37,6 +37,9 @@ body{
                     height: 180px;
                     border-radius: 50%;
                     margin-top: 20px;
+                    animation-name: anime;
+                    animation-iteration-count: infinite;
+                    animation-direction: 5s;
                 }
                 .music-icon-box{
                     width: 65%;
@@ -101,3 +104,15 @@ body{
     }
 }
 
+.anime{
+    animation:rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

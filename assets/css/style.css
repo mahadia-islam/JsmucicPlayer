@@ -43,6 +43,12 @@ body {
   height: 180px;
   border-radius: 50%;
   margin-top: 20px;
+  -webkit-animation-name: anime;
+          animation-name: anime;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: 5s;
+          animation-direction: 5s;
 }
 
 .container .row .col-md-3 .music-block .music-icon-box {
@@ -114,5 +120,32 @@ body {
 
 .container .row .col-md-3 .music-block .music-icon-box .stop-button .fa-pause-circle:hover {
   cursor: pointer;
+}
+
+.anime {
+  -webkit-animation: rotatePlayer 3s linear infinite;
+          animation: rotatePlayer 3s linear infinite;
+}
+
+@-webkit-keyframes rotatePlayer {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatePlayer {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
