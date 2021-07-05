@@ -7,6 +7,7 @@ const artist = document.querySelector('.artist');
 const songName = document.querySelector('.song-name');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
+const musicImg = document.querySelector('img');
 
 // scaffolding song array
 
@@ -56,9 +57,35 @@ stopButton.addEventListener('click',() => {
 // changing music data
 
 const loadSongs = (songs) => {
-    songName.innerHTML = songs.title;
-    artist.innerHTML = songs.artist;
-    audioMusic.src = `img/${songs.name}+.mp3`
+    songName.textContent = songs.title;
+    artist.textContent = songs.artist;
+    audioMusic.src = `music/${songs.name}.mp3`;
+    musicImg.src = `img/${songs.name}.jpg`
 }
 
-loadSongs(songs);
+let songsIndex = 0;
+
+const nextSong = () => {
+    songsIndex = (songsIndex + 1) % songs.length;
+    loadSongs(songs[songsIndex]);
+    audioMusic.pause();
+    stopButton.classList.remove('show');
+    stopButton.classList.add('hide');
+    playButton.classList.remove('hide');
+    playButton.classList.add('show')
+}
+
+const prevSong = () => {
+    songsIndex = (songsIndex - 1 + songs.length) % songs.length;
+    loadSongs(songs[songsIndex]);
+    audioMusic.pause();
+    stopButton.classList.remove('show');
+    stopButton.classList.add('hide');
+    playButton.classList.remove('hide');
+    playButton.classList.add('show')
+}
+
+nextBtn.addEventListener('click',nextSong);
+prevBtn.addEventListener('click',prevSong);
+
+loadSongs(songs[songsIndex]);

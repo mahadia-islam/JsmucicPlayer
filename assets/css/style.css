@@ -25,8 +25,9 @@ body {
           box-shadow: #fff 0px 2px 8px 0px;
 }
 
-.container .row .col-md-3 .music-block h2 {
+.container .row .col-md-3 .music-block h3 {
   color: #111;
+  padding: 0px 25px;
 }
 
 .container .row .col-md-3 .music-block p {
@@ -54,7 +55,18 @@ body {
   margin-top: 40px;
 }
 
-.container .row .col-md-3 .music-block .music-icon-box .fa-forward {
+.container .row .col-md-3 .music-block .music-icon-box .prev {
+  background-color: transparent;
+  border: none;
+}
+
+.container .row .col-md-3 .music-block .music-icon-box .next {
+  background-color: transparent;
+  border: none;
+  padding: 10px 0px;
+}
+
+.container .row .col-md-3 .music-block .music-icon-box .next .fa-forward {
   font-size: 18px;
   margin-top: 40px;
 }
